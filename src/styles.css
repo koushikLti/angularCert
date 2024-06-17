@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/mini.css/dist/mini-dark.min.css";
+
+.warning-alert {
+	border: 1px solid red;
+	border-radius:10px;
+	width:450px;
+	background: #ff000075;
+	padding: 20px 40px;
+	color:#fff;
+	text-align: center;
+}

@@ -1,0 +1,46 @@
+<div *ngIf="errorMessage" class="warning-alert">
+  Something Went Wrong
+</div>
+<button class="cursorpointer pr-10" type="button" href="#" (click)="backToHome()">
+  <i class="fa fa-home wh" aria-hidden="true"></i>&nbsp; Back
+</button>
+<div class="row">
+  <div>
+    <strong>{{ movie.title }}</strong>
+  </div>
+  <div>
+    <div class="row">
+      <div class="col-sm-3">
+        <img alt="Movie poster" src="{{ movie.poster }}" />
+      </div>
+      <div class="col-md-9"><b>Summary : </b>{{ movie.summary }}</div>
+    </div>		
+		<h2 class="align-center">Details</h2>
+    <div class="row">
+      <table class="table table-bordered overflo-hide">
+        <tbody class="border-none">
+          <tr class="row">
+            <td class="fw-bold border-right col-sm-2 bg-light">Box Office</td>
+            <td class="col-sm-10 pl-15">{{ movie.box_office | budgetCurrency }}</td>
+          </tr>
+          <tr class="row">
+            <td class="fw-bold border-right col-sm-2 bg-light">Budget</td>
+            <td class="col-sm-10 pl-15">{{ movie.budget | budgetCurrency }}</td>
+          </tr>
+          <tr class="row">
+            <td class="fw-bold border-right col-sm-2 bg-light">Duration</td>
+            <td class="col-sm-10 pl-15">{{ movie.duration | minToHour }}</td>
+          </tr>
+          <tr class="row">
+            <td class="fw-bold border-right col-sm-2 bg-light">Producers</td>
+            <td class="col-sm-10 pl-15">{{ movie.producers }}</td>
+          </tr>
+          <tr class="row">
+            <td class="fw-bold border-right col-sm-2 bg-light">Cinematographers</td>
+            <td class="col-sm-10 pl-15">{{ movie.cinematographers }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

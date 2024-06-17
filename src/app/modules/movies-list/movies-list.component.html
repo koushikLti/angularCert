@@ -1,0 +1,52 @@
+<div *ngIf="errorMessage" class="warning-alert">
+  Something Went Wrong
+</div>
+<div class="filter-section">
+  <h4>Filters</h4>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="input-group">
+        <span>Title</span>
+        <input
+          type="text"
+          class="form-control input-background pos-left-2"
+          aria-label="Sizing example input"
+          [(ngModel)]="movieTitle"/>
+      </div>
+    </div>  
+    <div class="col-sm-7">
+      <div class="input-group">
+        <span>Release Year</span>
+        <input
+          type="number"
+          class="form-control input-background pos-left-2"
+          aria-label="Sizing example input"
+          [(ngModel)]="releaseYear"/>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <ul class="w-100">
+    <ng-container *ngFor="let movie of moviesList | filter : movieTitle : releaseYear;">
+    <li class="w-100">
+      <div class="row">
+        <div class="col-sm-9">
+          <h5>{{ movie.title }}</h5>
+          <p class="content-detail">
+            <span class="margin-5">Release Date: {{ movie.release_date }}
+            </span>
+            <span class="margin-5">
+              Budget: {{ movie.budget | budgetCurrency }}</span>
+            <span class="margin-5">
+              Duration: {{ movie.duration | minToHour }}</span>
+          </p>            
+        </div>
+        <button [routerLink]="[movie.id]" class="pl-5 col-sm-2">Details</button>
+      </div>   
+    </li>
+  </ng-container>
+  </ul>
+
+</div>
+  

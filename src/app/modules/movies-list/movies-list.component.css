@@ -1,0 +1,53 @@
+.filter-section {
+  border: 1px solid white;
+  background-color: #eeeeee52;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.input-background {
+  background: #eeeeee52;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.pl-5 {
+  position: relative;
+  left: 5%;
+}
+
+.content-detail {
+  font-size: x-small;
+  position: relative;
+  top: -10px;
+}
+
+.list-bor {
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.list-section {
+  border: 1px solid white;
+}
+
+.pos-left-2 {
+  position: relative;
+  left: 8px;
+}
+
+.removeLiDot{
+  list-style-type: none
+}
+
+.margin-5{
+  margin:5px
+}
+
+input{
+  margin: 0;
+}
+

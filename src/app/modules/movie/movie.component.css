@@ -1,0 +1,44 @@
+.centerAlign{
+  text-align: center;
+}
+
+.cursorpointer{
+  cursor: pointer;
+}
+
+.wh {
+  color: white;
+}
+
+.overflo-hide {
+  overflow: hidden;
+}
+
+.fw-bold {
+	font-weight: bold;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.border-right {
+  border-right: 1px solid white;
+}
+
+.border-none {
+  border: none;
+}
+
+.bg-light {
+  background: #eeeeee52;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-10 {
+  position: relative;
+  right: 10px;
+}
